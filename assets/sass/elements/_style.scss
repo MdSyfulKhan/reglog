@@ -1,0 +1,218 @@
+// content wrapper
+.st-form-wrapper.st-style1 {
+  width: 100%;
+  max-width: 400px;
+}
+
+// checkbox
+.st-checkbox.st-style1 {
+  color: $primary;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 15px;
+  input {
+    height: 15px !important;
+    width: 15px !important;
+    margin-right: 5px;
+  }
+}
+
+.st-login-option.st-style1 {
+  display: flex;
+  justify-content: center;
+  > a {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+// common
+.form-group {
+  position: relative;
+}
+input,
+button {
+  height: 45px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+input[type=password]{
+ padding-right: 30px;
+}
+.input-group-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  z-index: 11;
+}
+.input-group-icon.st-right {
+  left: initial !important;
+  right: 0;
+  cursor: pointer;
+}
+.st-showPassword {
+  position: relative;
+  z-index: 111;
+  &::after{
+    position: absolute;
+    right: inherit;
+    top: -10px;
+    content: "\f06e";
+    font-family: "Font Awesome 5 Free";
+  }
+  &.active::after{
+    content: '\f070';
+  }
+}
+
+// form style
+.st-form.st-style1 {
+  background: #ffffff;
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  width: 100%;
+  .st-form-top,
+  .st-form-bottom {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .st-form-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 25px;
+  }
+  .st-form-title-description {
+    color: $primary;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+  }
+  .input-group {
+    margin-bottom: 15px;
+  }
+  input {
+    border: 1px solid #aaaaaa;
+    border-radius: 5px !important;
+    padding-left: 35px;
+    font-size: 14px;
+    color: $primary;
+    &:focus {
+      border: 1px solid $accent;
+      background-color: rgba($accent, 0.05);
+    }
+  }
+  .input-group-icon {
+    left: 10px;
+  }
+  .st-showPassword {
+    right: 5px;
+  }
+  button {
+    transition: all 0.4s ease;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    background-color: $accent;
+    color: $white;
+    font-size: 14px;
+    &:hover {
+      background-color: rgba($accent, 0.8);
+    }
+  }
+  .st-forget-password,
+  .st-reg-link {
+    color: $accent;
+    text-decoration: none;
+    &:active {
+      color: red;
+    }
+  }
+  .st-forget-password {
+    margin-bottom: 35px;
+    text-align: center;
+  }
+}
+
+// divider
+.st-separator.st-style1 {
+  position: relative;
+  height: 1px;
+  background-color: rgba($black, 0.05);
+  &::before {
+    position: absolute;
+    content: "or";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $white;
+    padding: 0 10px;
+    color: $primary;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+// .st-form {
+//   // indivisual form
+//   &.st-style1 {
+//
+//     .st-form-top {
+//       padding: 30px 50px;
+//     }
+//     .st-form-bottom {
+//       text-align: center;
+//       padding: 20px;
+//     }
+//     .st-form-heading-text {
+//       margin-bottom: 20px;
+//     }
+//     input {
+//       height: 45px;
+//       width: 100%;
+//       font-size: 14px;
+//       color: $primary;
+//       &:focus {
+//         border: 1px solid $accent !important;
+//       }
+//     }
+
+//     .st-remember {
+//       margin-bottom: 8px;
+//       margin-top: 8px;
+//       input {
+//         margin-right: 5px;
+//       }
+//     }
+
+//     button {
+//       transition: all 0.4s ease;
+//       margin-bottom: 15px;
+//       height: 45px;
+//       &:hover {
+//         background-color: rgba($accent, 0.85);
+//       }
+//     }
+//     .st-links {
+//       margin-bottom: 10px;
+//       a {
+//         display: inline-block;
+//         margin-right: 5px;
+//         &:last-child {
+//           margin: 0;
+//         }
+//       }
+//     }
+//   }
+// }

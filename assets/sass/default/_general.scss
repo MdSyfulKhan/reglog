@@ -1,0 +1,89 @@
+.st-mp0{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.st-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.st-radius5{
+  border-radius: 5px;
+}
+.st-radius15{
+  border-radius: 15px;
+}
+
+.st-default-border{
+  border-color: #aaaaaa !important;
+}
+
+.st-accent-border{
+  border-color: $accent !important;
+}
+
+.st-border-none{
+  border: none;
+}
+
+.st-transparent-bg,
+.st-transparent-bg-hover:hover{
+  background-color: transparent;
+}
+
+.st-white-color,
+.st-white-color-hover:hover{
+  color: $white;
+}
+.st-white-bg,
+.st-white-bg-hover:hover{
+  background-color: $white;
+}
+
+.st-black-color,
+.st-black-color-hover:hover{
+  color: $black;
+}
+.st-black-bg,
+.st-black-bg-hover:hover{
+  background-color: $black;
+}
+
+.st-primary-color,
+.st-primary-color-hover:hover{
+  color: $primary;
+}
+.st-primary-bg,
+.st-primary-bg-hover:hover{
+  background-color: $primary;
+}
+
+.st-secondary-color,
+.st-secondary-color-hover:hover{
+  color: $secondary;
+}
+.st-secondary-bg,
+.st-secondary-bg-hover:hover{
+  background-color: $secondary;
+}
+
+.st-tertiary-color,
+.st-tertiary-color-hover:hover{
+  color: $tertiary;
+}
+.st-tertiary-bg,
+.st-tertiary-bg-hover:hover{
+  background-color: $tertiary;
+}
+
+.st-accent-color,
+.st-accent-color-hover:hover{
+  color: $accent;
+}
+.st-accent-bg,
+.st-accent-bg-hover:hover{
+  background-color: $accent;
+}
