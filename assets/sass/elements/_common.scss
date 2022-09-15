@@ -1,0 +1,46 @@
+// common
+.form-group {
+  position: relative;
+}
+
+input,
+button {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+input[type=password]{
+ padding-right: 30px;
+}
+
+.input-group-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  z-index: 11;
+  left: 10px;
+}
+
+.input-group-icon.st-right {
+  left: initial !important;
+  right: 0;
+  cursor: pointer;
+}
+
+.st-showPassword {
+  position: relative;
+  z-index: 111;
+  right: 5px;
+  &::after{
+    position: absolute;
+    right: inherit;
+    top: -12px;
+    content: "\f06e";
+    font-family: "Font Awesome 5 Free";
+  }
+  &.active::after{
+    content: '\f070';
+  }
+}

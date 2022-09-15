@@ -1,0 +1,116 @@
+// content wrapper
+.st-form-wrapper.st-style1 {
+  width: 100%;
+  max-width: 400px;
+}
+.st-form-wrapper.st-style4 {
+  width: 100%;
+  max-width: 550px;
+}
+
+
+// remember checkbox
+.st-remember.st-style1 {
+  display: flex;
+  align-items: center;
+  input {
+    height: 15px !important;
+    width: 15px !important;
+    margin-right: 5px;
+  }
+}
+
+.st-remember.st-style1.st-type1 {
+  input[type="checkbox"] {
+    appearance: none;
+    height: 18px !important;
+    width: 18px !important;
+    background: transparent;
+    border: 1px solid $white;
+    padding: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::after {
+      font-family: "Font Awesome 5 Free";
+      content: "\f00c";
+      font-weight: 900;
+      color: #fff;
+      display: none;
+    }
+    &:checked::after{
+      display: block;
+    }
+  }
+}
+
+
+
+// separator
+.st-separator.st-style1 {
+  position: relative;
+  height: 1px;
+  background-color: rgba($black, 0.05);
+  &::before {
+    position: absolute;
+    content: "or";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $white;
+    padding: 0 10px;
+    color: $primary;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+// social icons
+.st-social-icons.st-style1 {
+  display: flex;
+  justify-content: center;
+  > a {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+.st-social-icons.st-style2 {
+  display: flex;
+  > a {
+    height: 35px;
+    min-width: 35px;
+    max-width: 200px;
+    background-color: #151515;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    &:last-child {
+      margin: 0;
+    }
+    &.active{
+      width: 100%;
+      .st-title{
+        display: block;
+      }
+    }
+    .st-title{
+      display: none;
+      margin-left: 10px;
+      color: $white;
+    }
+  }
+}
+
+
+// @keyframes fade-in{
+  
+// }

@@ -122,19 +122,19 @@ a:hover {
 }
 
 .st-normal {
-  font-weight: 400;
+  font-weight: 400 !important;
 }
 
 .st-medium {
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 
 .st-semibold {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 
 .st-bold {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 .st-font-14 {
@@ -609,6 +609,21 @@ a:hover {
           justify-content: center;
 }
 
+.st-height-100vh {
+  height: 100vh;
+}
+
+.st-cover-center-no-repeat {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.st-center-no-repeat {
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .st-radius5 {
   border-radius: 5px !important;
 }
@@ -694,66 +709,6 @@ a:hover {
   background-color: #004FED;
 }
 
-.st-form-wrapper.st-style1 {
-  width: 100%;
-  max-width: 400px;
-}
-
-.st-checkbox.st-style1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.st-checkbox.st-style1 input {
-  height: 15px !important;
-  width: 15px !important;
-  margin-right: 5px;
-}
-
-.st-social-icons.st-style1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.st-social-icons.st-style1 > a {
-  display: inline-block;
-  height: 24px;
-  width: 24px;
-  margin-right: 10px;
-}
-
-.st-social-icons.st-style1 > a:last-child {
-  margin: 0;
-}
-
-.st-separator.st-style1 {
-  position: relative;
-  height: 1px;
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-.st-separator.st-style1::before {
-  position: absolute;
-  content: "or";
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-color: #ffffff;
-  padding: 0 10px;
-  color: #201B50;
-  font-size: 14px;
-  font-weight: 700;
-}
-
 .form-group {
   position: relative;
 }
@@ -776,6 +731,7 @@ input[type=password] {
           transform: translateY(-50%);
   display: inline-block;
   z-index: 11;
+  left: 10px;
 }
 
 .input-group-icon.st-right {
@@ -787,18 +743,161 @@ input[type=password] {
 .st-showPassword {
   position: relative;
   z-index: 111;
+  right: 5px;
 }
 
 .st-showPassword::after {
   position: absolute;
   right: inherit;
-  top: -10px;
+  top: -12px;
   content: "\f06e";
   font-family: "Font Awesome 5 Free";
 }
 
 .st-showPassword.active::after {
   content: '\f070';
+}
+
+.st-form-wrapper.st-style1 {
+  width: 100%;
+  max-width: 400px;
+}
+
+.st-form-wrapper.st-style4 {
+  width: 100%;
+  max-width: 550px;
+}
+
+.st-remember.st-style1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.st-remember.st-style1 input {
+  height: 15px !important;
+  width: 15px !important;
+  margin-right: 5px;
+}
+
+.st-remember.st-style1.st-type1 input[type="checkbox"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 18px !important;
+  width: 18px !important;
+  background: transparent;
+  border: 1px solid #ffffff;
+  padding: initial;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.st-remember.st-style1.st-type1 input[type="checkbox"]::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  font-weight: 900;
+  color: #fff;
+  display: none;
+}
+
+.st-remember.st-style1.st-type1 input[type="checkbox"]:checked::after {
+  display: block;
+}
+
+.st-separator.st-style1 {
+  position: relative;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.st-separator.st-style1::before {
+  position: absolute;
+  content: "or";
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 0 10px;
+  color: #201B50;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.st-social-icons.st-style1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.st-social-icons.st-style1 > a {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+}
+
+.st-social-icons.st-style1 > a:last-child {
+  margin: 0;
+}
+
+.st-social-icons.st-style2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.st-social-icons.st-style2 > a {
+  height: 35px;
+  min-width: 35px;
+  max-width: 200px;
+  background-color: #151515;
+  border-radius: 5px;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+}
+
+.st-social-icons.st-style2 > a:last-child {
+  margin: 0;
+}
+
+.st-social-icons.st-style2 > a.active {
+  width: 100%;
+}
+
+.st-social-icons.st-style2 > a.active .st-title {
+  display: block;
+}
+
+.st-social-icons.st-style2 > a .st-title {
+  display: none;
+  margin-left: 10px;
+  color: #ffffff;
 }
 
 .st-form.st-style1 {
@@ -819,6 +918,7 @@ input[type=password] {
 .st-form.st-style1 input {
   border: 1px solid #aaaaaa;
   padding-left: 35px;
+  height: 45px;
 }
 
 .st-form.st-style1 input:focus {
@@ -826,17 +926,10 @@ input[type=password] {
   background-color: rgba(0, 79, 237, 0.05);
 }
 
-.st-form.st-style1 .input-group-icon {
-  left: 10px;
-}
-
-.st-form.st-style1 .st-showPassword {
-  right: 5px;
-}
-
 .st-form.st-style1 button {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  height: 45px;
 }
 
 .st-form.st-style1 button:hover {
@@ -857,5 +950,75 @@ input[type=password] {
 .st-form.st-style1 .st-forget-password {
   margin-bottom: 35px;
   text-align: center;
+}
+
+.st-form.st-style4 {
+  background: #1f2937;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.03);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.03);
+  border-radius: 15px;
+  width: 100%;
+}
+
+.st-form.st-style4 .st-form-top,
+.st-form.st-style4 .st-form-bottom {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.st-form.st-style4 .st-RegLog-links a:last-child {
+  margin-left: 10px;
+}
+
+.st-form.st-style4 input {
+  padding-left: 40px;
+  height: 45px;
+  border-radius: 5px !important;
+}
+
+.st-form.st-style4.st-type1 {
+  background-color: #ffffff;
+}
+
+.st-form.st-style4.st-type1 label {
+  top: -15px;
+  left: 0;
+  color: #3c3c3c;
+}
+
+.st-form.st-style4.st-type1 input {
+  border: 1px solid #dfdfdf;
+}
+
+.st-form.st-style4.st-type1 .st-remember.st-style1.st-type1 label {
+  color: #919191;
+}
+
+.st-form.st-style4.st-type1 .st-remember.st-style1.st-type1 input[type="checkbox"] {
+  border: 1px solid #919191;
+  border-radius: 4px;
+}
+
+.st-form.st-style4.st-type1 .st-remember.st-style1.st-type1 input[type="checkbox"]::after {
+  color: #201B50;
+}
+
+.st-form.st-style4.st-type1 .st-remember.st-style1.st-type1 input[type="checkbox"]:checked::after {
+  display: block;
+}
+
+.st-btn.st-style1 {
+  width: 100%;
+  background-color: #004FED;
+  height: 45px;
+  border-radius: 5px;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.st-btn.st-style1:hover {
+  background-color: rgba(0, 79, 237, 0.8);
 }
 /*# sourceMappingURL=style.css.map */

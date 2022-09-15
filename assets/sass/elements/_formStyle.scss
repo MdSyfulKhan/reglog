@@ -1,0 +1,91 @@
+// form style
+.st-form.st-style1 {
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  width: 100%;
+  .st-form-top,
+  .st-form-bottom {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  input {
+    border: 1px solid #aaaaaa;
+    padding-left: 35px;
+    height: 45px;
+    &:focus {
+      border: 1px solid $accent;
+      background-color: rgba($accent, 0.05);
+    }
+  }
+  button {
+    transition: all 0.4s ease;
+    height: 45px;
+    &:hover {
+      background-color: rgba($accent, 0.8);
+    }
+  }
+  .st-forget-password,
+  .st-reg-link {
+    color: $accent;
+    text-decoration: none;
+    &:active {
+      color: red;
+    }
+  }
+  .st-forget-password {
+    margin-bottom: 35px;
+    text-align: center;
+  }
+}
+
+.st-form.st-style4 {
+  background: #1f2937;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.03);
+  border-radius: 15px;
+  width: 100%;
+  .st-form-top,
+  .st-form-bottom {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .st-RegLog-links a {
+    &:last-child {
+      margin-left: 10px;
+    }
+  }
+  input {
+    padding-left: 40px;
+    height: 45px;
+    border-radius: 5px !important;
+  }
+}
+
+.st-form.st-style4.st-type1 {
+  background-color: $white;
+  label {
+    top: -15px;
+    left: 0;
+    color: $tertiary;
+  }
+  input {
+    border: 1px solid #dfdfdf;
+  }
+  .st-remember.st-style1.st-type1 {
+    label{
+      color: $secondary;
+    }
+    input[type="checkbox"] {
+      border: 1px solid #919191;
+      border-radius: 4px;
+      &::after {
+        color: $primary;
+      }
+      &:checked::after {
+        display: block;
+      }
+    }
+  }
+}
