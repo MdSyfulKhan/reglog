@@ -172,9 +172,16 @@ a:hover {
 .st-font-20 {
   font-size: 20px;
 }
+.st-font-22 {
+  font-size: 22px;
+}
 .st-font-32 {
   font-size: 32px;
 }
+.st-font-52 {
+  font-size: 52px;
+}
+// 
 @media screen and (max-width: 991px) {
   .st-font-md-10 {
     font-size: 10px;
@@ -211,5 +218,8 @@ a:hover {
   }
   .st-font-md-24 {
     font-size: 24px;
+  }
+  .st-font-md-38 {
+    font-size: 38px;
   }
 }

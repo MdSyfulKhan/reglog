@@ -1,0 +1,17 @@
+.st-hero{
+  min-height: 710px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+
+  @media screen and (max-width:767px) {
+    .st-hero-content{
+      margin-top: 70px;
+    }
+    .st-hero-form{
+      margin-bottom: 45px;
+    }
+  }
+}

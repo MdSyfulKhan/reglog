@@ -10,19 +10,21 @@
   justify-content: center;
 }
 
-.st-height-100vh{
-  height: 100vh;
-}
-
 .st-cover-center-no-repeat{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.st-center-no-repeat{
-  background-position: center center;
-  background-repeat: no-repeat;
+.st-section-heading-wrapper{
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+}
+
+.st-hero-content-wrapper{
+  width: 100%;
+  max-width: 650px;
 }
 
 .st-radius5{
@@ -30,23 +32,6 @@
 }
 .st-radius15{
   border-radius: 15px;
-}
-
-.st-default-border{
-  border-color: #aaaaaa !important;
-}
-
-.st-accent-border{
-  border-color: $accent !important;
-}
-
-.st-border-none{
-  border: none;
-}
-
-.st-transparent-bg,
-.st-transparent-bg-hover:hover{
-  background-color: transparent;
 }
 
 .st-white-color,
@@ -85,15 +70,6 @@
   background-color: $secondary;
 }
 
-.st-tertiary-color,
-.st-tertiary-color-hover:hover{
-  color: $tertiary;
-}
-.st-tertiary-bg,
-.st-tertiary-bg-hover:hover{
-  background-color: $tertiary;
-}
-
 .st-accent-color,
 .st-accent-color-hover:hover{
   color: $accent;
@@ -101,5 +77,21 @@
 .st-accent-bg,
 .st-accent-bg-hover:hover{
   background-color: $accent;
+}
+
+// Landing basic
+.st-btn{
+  padding: 12px 42px;
+  display: inline-block;
+  text-decoration: none;
+  @media screen and (max-width: 575px) {
+    padding: 10px 25px;
+  }
+}
+.st-documention{
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
 }
 

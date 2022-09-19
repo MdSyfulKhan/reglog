@@ -1,11 +1,19 @@
-.st-btn.st-style1{
+.st-btn.st-style1 {
   width: 100%;
   background-color: $accent;
   height: 45px;
   border-radius: 5px;
   color: $white;
   transition: all 0.3s ease;
-  &:hover{
+  &:hover {
     background-color: rgba($accent, 0.8);
+  }
+}
+
+.st-btn.st-landing {
+  display: inline-block;
+  padding: 12px 42px;
+  @media screen and (max-width: 575px) {
+    padding: 10px 25px;
   }
 }
