@@ -1,6 +1,6 @@
 dynamicBackground();
 
-
+// show password
 function showPassword(){
   var passwordField = $('#password');
   var passwordFieldType = $(passwordField).attr('type');
